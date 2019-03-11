@@ -29,14 +29,71 @@ header nav ul li
 	/*text-decoration:underline;*/
 
 }
+#bgoffer
+{
+	left: -35px;  /*Usar cuando sacamos la imagen de la caja*/
+	position: relative;/*cuando quiero sacar a la imagen de su caja*/
+	top: -410px;
+}
 #granthams
 {
 	margin-left: 25;
- margin-top: 25px;
+    margin-top: 25px;
 
 }
 #paint
 {
-	float:right;
+	float:right; /*flotar la imagen*/
 }
+#primerSeccion
+{
+	height: 318px;
+    margin-top: 60px; /* margin = mover cajas (cajas completas)*/
 
+}
+#primerSeccion article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#secc01art01
+{
+	width: 60%; /*Ancho*/
+	margin-left: 30px;
+}
+#secc01art02
+{
+	margin-left: 50px;
+	width: 30%; /*ancho*/
+}
+#secc01art02 ul
+{
+  list-style: none;  /*quita las binetas*/
+  margin-left:-40px;
+}
+#secc01art02 ul li:before  /*con el before es poner las binetas antes de las letras*/
+{
+	content: "• ";
+	color:#FF0099;
+}
+#segundaSeccion article
+{
+	text-align: right; /*mover texto dentro de una caja*/
+	padding-right: 122px;
+}
+.colorrosa
+{
+	color: #FF0099;
+}
+.letragrande
+{
+	font-size: 3.5em;
+}
+.letramediana
+{
+	font-size: 2em;
+}
+.nito
+{
+	font-weight: bold;
+}
