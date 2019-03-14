@@ -35,6 +35,22 @@ footer
 	background: #2e65b6;
 	color: white;
 	padding-left: 20px;
+	font-size: 0.7em;
+	text-align: center;
+	margin-top: 20px;
+}
+footer article 
+{
+	display: inline-block;
+	width: 32%;
+	padding-top: 40px;
+}
+footer article input
+{
+ border-radius: 15px;
+ color: white;
+ background:#2e54b6;
+ float: right;
 }
 #bgoffer
 {
@@ -42,11 +58,26 @@ footer
 	position: relative;/*cuando quiero sacar a la imagen de su caja*/
 	top: -410px;
 }
+#facebook
+{
+	float: right;
+	position: relative;
+	top: -130px;
+	right: 150px;
+
+}
 #granthams
 {
 	margin-left: 25;
     margin-top: 25px;
 
+}
+#monitos
+{
+	float: right;
+	position: relative;
+	top: -170px;
+	right: -65px;
 }
 #paint
 {
@@ -92,6 +123,13 @@ footer
 	text-align: right; /*mover texto dentro de una caja*/
 	padding-right: 122px;
 }
+#twitter
+{
+	float: right;
+	position: relative;
+	top: -130px;
+	right: 50px;
+}
 #terceraSeccion article 
 {
 	display: inline-block;
@@ -100,7 +138,7 @@ footer
 }
 #terceraSeccion article img
 {
-	vertical-align: middle;
+	vertical-align: middle;  /*acomodar texto a la mitad de la imagen*/
 }
 #terceraSeccion article input
 {
