@@ -1,0 +1,161 @@
+body
+{
+	font-size: 16px; /*tamaño de letra*/
+	margin: 0px auto; /*margen a los lados*/
+	max-width: 1024px; /*que tan grande se puede hacer la pagina con zoom*/
+	/*min-width: 1024px; que tan pequeña se puede hacer con zoom*/
+	background-color:#2b2b2b; 
+}
+header
+{
+	background-color: #f0f0f0;
+}
+header input
+{
+  border-collapse: 5px;
+  text-align: right;
+  margin-top: 15px;
+  border-style:inset; 
+  font-stretch: ultra-condensed;
+  margin-left: 50px;
+  background-color: #eeeeee;
+  border-width: medium;
+ }
+header img
+{
+	width: 800px;
+	margin-left: 202px;
+	margin-top: -20px;
+	padding-bottom: 15px;
+    padding-right: 10px;
+}
+#primeraSeccion article
+{
+	margin-top: 15px;
+	display: inline-block;
+	width: 17%;
+	padding-left: 27px;
+	margin: -2px;
+	text-align: left;
+	vertical-align: top;
+	margin-top: 15px;
+	padding-top: 20px;
+}
+#primeraSeccion img
+{
+	width: 150px;
+	display: inline-block;
+	padding-top: 20px;
+	margin-top: -20px;
+}
+hr
+{
+	border-width: 1px;
+	border-color: #444;
+}
+#segundaSeccion img
+{
+	width: 250px;
+	margin-left: 45px;
+}
+#segundaSeccion article
+{
+	margin-top: 20px;
+	width: 30%;
+	display: inline-block;
+	margin-left: 30px;
+
+}
+#terceraSeccion article
+{
+	width: 30%;
+	display: inline-block;
+	margin-top: 15px;
+	border-top: 1px dashed gray; 
+	vertical-align: top;
+	margin-left: 15px;
+}
+#secc01art01 ul
+{
+	list-style: none; 
+}
+#secc01art01
+{
+	font-family:cursive;
+}
+#secc01art02
+{
+	background-color: #b4d052;
+	line-height: 100%;
+	font-family: sans-serif;
+	padding-bottom: 41px;
+}
+#secc01art03
+{
+	background-color: #545454;
+	line-height: 100%;
+	font-family: sans-serif;
+	padding-bottom: 42px;
+}
+#secc01art04
+{
+	background-color: #d42d3f;
+	line-height: 100%;
+	font-family: sans-serif;
+	padding-bottom: 41px;
+}
+#secc01art05
+{
+	background-color: #e4e4e4;
+	line-height: 100%;
+	font-family: sans-serif;
+}
+#secc03art01
+{
+	padding-left: 15px;
+}
+#secc03art02
+{
+  padding-left: 25px;
+}
+#secc03art03
+{
+ padding-left: 5px;
+}
+.colorazul
+{
+	color: #435e6d;
+}
+.colorblanco
+{
+	color: #fcfdf9;
+}
+.colorgrisclaro
+{
+	color: #b0b0b0;
+}
+.colorgris
+{
+	color: #8f8f8f;
+}
+.letragrande
+{
+  font-size: 1.6em;
+}
+.letramediana
+{
+	font-size: 0.5em;
+}
+.letrachica
+{
+	font-size: 0.9em;
+}
+.nito
+{
+	font-weight: bold;
+}
+
+
+
+
+
