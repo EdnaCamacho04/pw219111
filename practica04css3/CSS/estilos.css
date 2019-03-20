@@ -1,0 +1,174 @@
+body
+{
+ font-size: 16px;
+ margin:0 auto;
+ max-width: 1024px;
+}
+header
+{
+   	border-bottom: 1px dashed gray;
+}
+footer article
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 18%;
+	margin-top: 40px;
+	margin-left: 12px;
+	padding-right: 2px;
+}
+header nav ul li
+{
+ display: inline-block;
+ margin-right: 30px;
+ margin-top: 15px;
+ margin-bottom: 20px;
+ color: black;
+ font-weight: bold;
+}
+header nav ul
+{
+  list-style: none;
+  font-size: 1.1em;
+  margin-left: -20px;
+}
+#primeraSeccion article
+{
+  display: inline-block;
+  vertical-align: top;
+}
+#segundaSeccion
+{
+	margin-top: 7px;
+	line-height: 150%;
+}
+#secc01art01art01 
+{
+  	border-bottom: 1px dashed gray;
+  	padding-top: 25px;
+  	vertical-align: bottom;
+  	width: 100%;
+  	padding-bottom: -0px;
+}
+#secc01art01art02
+{
+	margin-top: 15px;
+}
+#secc01art01
+{
+	width: 50%;
+	padding-right: 30px;
+}
+#secc01art02
+{
+	width: 45%;
+}
+#bike
+{
+  width:380px;
+  position: relative;
+  margin-left: 50px;
+}
+#years
+{
+  width: 150px;
+  position: relative;
+  left: -25px;
+  top: -50px;
+}
+#bandera
+{
+  width: 20px;
+  float: right;
+  position: relative;
+  right: 70px;
+}
+#buy
+{
+   position: relative;
+   float: right;
+   width: 50px;
+   bottom: -60px;
+   right: 100px;
+}
+#facebook
+{
+  width: 15px;
+  position: relative;
+}
+#first
+{
+	position: relative;
+	width: 190px;
+	left: 20px;
+}
+#twitter
+{
+ width: 15px;
+ position: relative;
+}
+#shop
+{
+  float: right;
+  width: 120px;
+  position: relative;
+  right: 90px;
+  bottom: -30px;
+}
+#signal
+{
+ width: 15px;
+ position: relative;
+}
+#logo
+{
+  width: 20px;
+  position: relative;
+  float: right;
+  right: 120px;
+}
+#mundo
+{
+  width: 20px;
+  position: relative;
+  float: right;
+  right: 80px;
+}
+#vid01
+{
+  width: 240px;
+}
+#vid02
+{
+ width: 240px;
+ margin-right: 15px;
+}
+#voice
+{
+  width: 20px;
+  position: relative;
+}
+.colornegro
+{
+	color: black;
+}
+.colorverde
+{
+	color: #73f33d;
+}
+.colorgris
+{
+	color: #afafaf;
+}
+.nito
+{
+	font-weight: bold;
+}
+.letragrande
+{
+	font-size: 3.8em;
+}
+.letrachica
+{
+	font-size: 1em;
+}
