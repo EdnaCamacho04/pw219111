@@ -1,174 +1,176 @@
+@font-face
+{
+  font-family: candal;
+  src:url("candal.ttf");
+}
 body
 {
- font-size: 16px;
- margin:0 auto;
- max-width: 1024px;
+  font-size: 16px;
+  width: 1024px;
+  margin:0 auto;
 }
-header
+footer
 {
-   	border-bottom: 1px dashed gray;
+  margin-top: 30px;
 }
 footer article
 {
-	display: inline-block;
-	vertical-align: top;
-	width: 18%;
-	margin-top: 40px;
-	margin-left: 12px;
-	padding-right: 2px;
+  width: 15%;
+  display:inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+header
+{
+  border-bottom: 1px dashed gray;
 }
 header nav ul li
 {
- display: inline-block;
- margin-right: 30px;
- margin-top: 15px;
- margin-bottom: 20px;
- color: black;
- font-weight: bold;
-}
-header nav ul
-{
   list-style: none;
-  font-size: 1.1em;
-  margin-left: -20px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-left: -10px;
+  margin-top: 25px;
+  color: black;
+  font-weight: bold;
+}
+#secc01art01art01
+{
+  font-family: 'candal', sans-serif;
+  width: 
 }
 #primeraSeccion article
 {
   display: inline-block;
-  vertical-align: top;
 }
 #segundaSeccion
 {
-	margin-top: 7px;
-	line-height: 150%;
-}
-#secc01art01art01 
-{
-  	border-bottom: 1px dashed gray;
-  	padding-top: 25px;
-  	vertical-align: bottom;
-  	width: 100%;
-  	padding-bottom: -0px;
-}
-#secc01art01art02
-{
-	margin-top: 15px;
+  margin-top: 15px;
 }
 #secc01art01
 {
-	width: 50%;
-	padding-right: 30px;
+  width: 55%; 
+  vertical-align: top;
+  margin-top: 15px;
+}
+#secc01art01art01
+{
+border-bottom: 1px dashed gray;
+}
+#secc01art01art02
+{
+ padding-top: 25px;
 }
 #secc01art02
 {
-	width: 45%;
-}
-#bike
-{
-  width:380px;
-  position: relative;
-  margin-left: 50px;
-}
-#years
-{
-  width: 150px;
-  position: relative;
-  left: -25px;
-  top: -50px;
+  width: 40%;
 }
 #bandera
 {
-  width: 20px;
-  float: right;
   position: relative;
-  right: 70px;
+  float: right;
+  width: 25px;
+  right: 55px;
 }
 #buy
 {
    position: relative;
    float: right;
-   width: 50px;
-   bottom: -60px;
-   right: 100px;
+   width: 40px;
+   right: 350px;
+   top: 70px;
 }
-#facebook
+#go
 {
-  width: 15px;
-  position: relative;
+   position: relative;
+   float: right;
+   width:130px;
+   right: 100px;
+   top: 30px;
 }
 #first
 {
-	position: relative;
-	width: 190px;
-	left: 20px;
-}
-#twitter
-{
- width: 15px;
- position: relative;
-}
-#shop
-{
-  float: right;
-  width: 120px;
-  position: relative;
-  right: 90px;
-  bottom: -30px;
-}
-#signal
-{
- width: 15px;
- position: relative;
+   position: relative;
+   width: 150px;
+   margin-left: 30px;
+
 }
 #logo
 {
-  width: 20px;
-  position: relative;
-  float: right;
-  right: 120px;
+   position: relative;
+   float: right;
+   width: 25px;
+   right: 60px;
 }
 #mundo
 {
-  width: 20px;
+   position: relative;
+   float: right;
+   width: 25px;
+   left: 25px;
+}
+
+#bike
+{
+  width: 300px;
+}
+#years
+{
+  width: 100px;
   position: relative;
-  float: right;
-  right: 80px;
+  float:left;
+  top: 390px;
 }
-#vid01
+#footart5
 {
-  width: 240px;
+  width: 22%;
 }
-#vid02
+#video1
 {
- width: 240px;
- margin-right: 15px;
+  width: 260px;
+}
+#video2
+{
+   width: 260px;
+   margin-left: 15px;
+}
+#face
+{
+ position: relative;
+ width: 15px;
+}
+#twitter
+{
+  position: relative;
+  width: 15px;
+}
+#signal
+{
+position: relative;
+  width: 15px;
 }
 #voice
 {
+position: relative;
   width: 20px;
-  position: relative;
-}
-.colornegro
-{
-	color: black;
-}
-.colorverde
-{
-	color: #73f33d;
-}
-.colorgris
-{
-	color: #afafaf;
-}
-.nito
-{
-	font-weight: bold;
-}
-.letragrande
-{
-	font-size: 3.8em;
 }
 .letrachica
 {
-	font-size: 1em;
+  font-size: 0.9em;
+}
+.letragrande
+{
+  font-size: 4em;
+}
+.colorverde
+{
+  color: #73f33d;
+}
+.colorgris
+{
+  color: #989898;
+}
+.nito
+{
+  font-weight: bold;
 }
