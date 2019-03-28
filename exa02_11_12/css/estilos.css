@@ -1,0 +1,106 @@
+@font-face
+{
+
+}
+body
+{
+	font-size: 16px;
+	width: 1024px;
+	margin:0 auto;
+}
+header 
+{
+
+}
+#men
+{
+
+}
+hr
+{
+	border-style: double;
+}
+
+#primeraSeccion article
+{
+  display: inline-block;
+}
+#men
+{
+	vertical-align: middle;
+}
+#secc01art01
+{
+border-right: solid black;
+width: 50%;
+padding-right: 20px;
+}
+
+#secc01art02
+{
+	border:1px solid black;
+	width: 30%;
+	vertical-align: top;
+	margin-left: 50px;
+}
+#menu
+{
+	width: 20px;
+	position: relative;
+	float: left;
+	top: 4px;
+
+}
+#sh
+{
+	margin-left: 20px;
+	vertical-align: middle;
+}
+#nort
+{
+	margin-left: 300px;
+}
+#eur
+{
+	margin-left: 425px;
+}
+#ind
+{
+	float: top;
+	top: 60px;
+}
+#lupa
+{
+	width: 20px;
+	position: relative;
+	float: left;
+	left: 100px;
+}
+#planta
+{
+	width: 600px;
+	margin-left: 50px;
+}
+#tela
+{
+	width: 200px;
+	position: relative;
+}
+#persona
+{
+	width: 200px;
+	position: relative;
+	margin-top: 20px;
+}
+#pos
+{
+	padding-left: 50px
+}
+.letrachica
+{
+	font-size: 9px;
+}
+.letragrande
+{
+	font-size: 30px;
+}
