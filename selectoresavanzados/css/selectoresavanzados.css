@@ -1,0 +1,96 @@
+img[alt] /*para decir que la imagen tiene un atributo alt*/
+{
+	border:5px solid blue;
+}
+img[src="img/LOGO_TEC_PNG_OK.png"]/*El = busca una cadena completa*/
+{
+	width: 400px;
+}
+img[src^="img/"] /*El ^ busca al inicio de la cadena (busca subcadenas)funciona como el like de sql*/
+{
+	width: 150px;
+}
+img[src$="png"] /*El $ busca al final de la cadena (busca subcadenas) funciona como el like de sql*/
+{
+	width: 250px;
+}
+img[src*="mg/"]/*funciona como el like de sql el * funciona en cualquier parte de la cadena no importa si esta al inicio, al medio o al final*/
+{
+  width: 1000px;
+}
+/*Equivalente a: 
+.resaltado
+.ingles
+.archivo*/
+article[class~="resaltado"]
+{
+	border: 1px dashed blue;
+}
+article[class~="ingles"]
+{
+	border: 1px dashed red;
+}
+article[class~="archivo"]
+{
+	border: 1px dashed green;
+}
+article[class|="ingles"]
+{
+	text-align: center;
+}
+div > p
+{
+color: blue;
+}
+div p
+{
+	color: red;
+}
+h2 + p /*El + significa el siguiente elemento despues del de la izq.*/
+{
+	color: gray;
+}
+h2 ~ p /*La ~ toma todas las p seguidas de h2*/
+{
+	color: green;
+}
+#resumen,#experimento,#pruebas,#resultados,#conclusiones
+{
+	color: red;
+}
+section:not(#referencias)
+{
+	color: blue;
+}
+li:nth-child(odd)  /*Todos los impares (child = hijo, n=numero,por ejemplo 4th)*/
+{
+  color: green;
+}
+li:nth-child(even)/*Todos los pares*/
+{
+	color: blue;
+}
+li:nth-child(5) /*El quinto elemento de la lista*/
+{
+ color: red;
+}
+li:nth-last-child(2) /*El primer elemento de abajo para arriba*/
+{
+	color: purple;
+}
+p:first-line
+{
+	color: red;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
