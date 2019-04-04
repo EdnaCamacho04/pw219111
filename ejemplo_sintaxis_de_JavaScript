@@ -1,0 +1,32 @@
+
+var b=8
+undefined
+a+b
+13
+var c=a+b
+undefined
+c
+13
+a+b*c
+109
+function suma(a,b){return a+b}
+undefined
+suma
+ƒ suma(a,b){return a+b}
+suma(6,7)
+13
+undefined
+var misuma=function(a,b){return a+b}
+undefined
+misuma
+ƒ (a,b){return a+b}
+misuma(8,8)
+16
+alert('Alerta en pantalla')
+undefined
+var edad=prompt('Dame tu edad',0)
+undefined
+edad
+"20"
+for(var i=0;i<10;i++){alert(i);}
+undefined
