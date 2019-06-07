@@ -70,6 +70,7 @@ transform:
 	rotate():  define una transformación que gira un elemento alrededor de un punto fijo en un plano 2D sin deformarlo.
 	scale(): define una transformación que modifica el tamaño de un elemento en el plano 2D.
 	skew(): define una transformación que sesga un elemento en el plano 2D.
+	Hover:cuando algo pasa encima del objeto
 ----------------------------------------------------------------------------------------------------------------------------
 Selectores Avanzados
 img[src^="img/"] /*busca al inicio de la cadena*/
@@ -107,3 +108,28 @@ li:nth-last-child(1) /*De abajo para arriba*/
 {
 	color: purple;
 }
+
+
+GET: es usado para leer un recurso
+POST es para crear un recurso
+un ejemplo,: si yo registro un nombre y una contraseña..., si lo uso con Get, en el url miras el nombre y la contraseña
+y si lo usas con POST, se va por abajo, y no se ve en el url
+el PUT es para actualizar/reemplazar un elemento
+PATCH: es para actualizar/modificar un elemento de la coleccion
+DELETE:Borra un recurso
+push: insertar
+Pop: extraer
+npm init : Inicia el proyecto creando un .json
+npm install [nombre] : Instalas paquete(s)
+npm install [nombre] --save: Instalas paquetes y se van agregando a las dependencias en el .json
+npm install [nombre] --save-dev: Lo mismo, instalas paquetes, se van agregando a las dependencias solo necesarias para el desarrollo en el .json
+npm install -g [nombre] : Instalas un paquete, pero se instalara de manera global, y puede ser accedido desde cualquier directorio
+npm ls : Eliminas las dependencias del proyecto
+npm update --save : Actualizas las librerias compatibles
+npm run [Nombre de dependencia]: Empieza a correr unn script, ya sea que lo tengas instalado localmente o servidor
+npm install express mysql --save: instalar mysql y sus paquetes
+
+V-for:hacer un ciclo for
+v-if:hacer condiciones
+v-on:click : es un evento
+V-model: Vincular a la etiqueta donde lo escribes con una palabra, y esa palabra invoca una funcion dentro del JS

@@ -1,4 +1,4 @@
-Vue.component('componente1',{
+Vue.component('componente1',{   //Se crea el componente
 	template: 
 	`
 	  <div style='background: red;padding:2px;'>

@@ -19,34 +19,62 @@
     	template:
     	`
           <div>
-           <h1>Numero: {{ $store.state.numero }}</h1>
+           <h1>Numero: {{ numero }}</h1>
            <hijo></hijo>
           </div>
-    	`
+    	`,
+    	computed: {
+    	  ...Vuex.mapState(['numero'])
+    	}
     });
 
     Vue.component('hijo',{
     	template:
     	`
            <div>
-               <h1>Numero {{ $store.state.numero }}</h1>
-               <button @click=" $store.commit('aumentar')"> + </button>
+               <h1>Numero {{ numero }}</h1>
+               <button @click="aumentar"> + </button>
+               <button @click="disminuir(2)"> - </button>
+               <button @click="obtenerPersonas"> personas </button>
+               <ul v-for="p of personas.results">
+                 <li>{{ p.name.first }} {{ p.name.last }}</li>
+               </ul>
            </div>
-    	`
+    	`,
+    	computed: {
+    	  ...Vuex.mapState(['numero','personas'])
+    	},
+    	methods:{
+    		...Vuex.mapMutations(['aumentar','disminuir']),
+    		...Vuex.mapActions(['obtenerPersonas'])
+    	}
     })
 
-    //Creamos el store compartido
+    //Creamos el store compartido, VUEX que es el almacenamiento entre componentes.
 	const store = new Vuex.Store({
 		state: {
-			numero: 10
+			numero: 10,
+			personas: []
 		},
 		mutations:{
 			aumentar(state){
 				state.numero ++
-
+			},
+			disminuir(state,n){
+				state.numero -= n
+			},
+			llenarPersonas(state,personasWeb){
+                state.personas = personasWeb
 			}
+		},
+		actions:{
+		   obtenerPersonas: async function({ commit }){
+            const data = await fetch('https://randomuser.me/api/?results=20')
+            const personas = await data.json();
+            commit('llenarPersonas',personas)
+		   }
 		}
-});
+	});
 
 	new Vue({
 		el:'#app',
@@ -56,3 +84,27 @@
 
 </body>
 </html>
+
+
+<!-- (componentes)de un componente padre a un componente hijo los datos se tenia que hacer atraves de props y pasarlos a traves de esas propiedades de las etiquetas y tener definidio una seccion de props en el hijo para poder cachar esos datos.
+si queriamos hacerlo del hijo al padre los datos tuvimos que mandar los datos a traves de un evento-->
+<!-- Vuex es un repositorio global
+para contruir un componente en script es Vue.component('Nombre del componente'),{
+	templated:
+}-->
+<!--el: es el elemento 
+Los datos que se almacenan en un Store se almacenan del mismo modo como se almacenan los componententes, nada mas que con un nombre diferente en los componentes si nosotros ponemos informacion la ponemos en una seccion llamada data en el caso del almacenamiento de Vuex se llaman state o estados  
+los state vienen siendo los valores compartidos
+El store se manda a llamar con signo de pesos $store-->
+<!-- se define un metodo que modifiquen los estados que son llamados mutations esas mutaciones son funciones que acceden directamente a los states o datas del store la analogia con los componentes es que el state se llama data y las mutations se llaman methods 
+state debe de venir como parametro en cada mutations osea en cada metodo que mutations tenga
+una mutacion se manda a llamar a traves del metodo commit para asegurar la mutacion
+propiedad computed que agrega un return que nos regresa un objeto.-->
+<!--mapState accede directamente al store a la perte de state y nos permite sacar una o mas variables del state que esten almacenadas en el state y las regresa a traves de un arreglo y un arreglo es un objeto. -->
+<!-- mapState en jaScript en su version mas nueva que es ecmaScript 6 nos permite utilizar ... (...mapState)Estos ... hacen que el mapState tome una cantidad indeterminada de parametros que vienen del state mapState es parte de Vuex por eso se pone ...Vuex.mapState -->
+<!-- ...Vuex.mapMutations que tambien recibe un objeto que es un arreglo donde ponemos las mutaciones que queremos utilizar -->
+<!--actions este tipo de acciones van mas alla de hacer cosas mas concretas en la accion tambien van metodos
+Fetch: es una funcion de javaScript que permite poner una Url y que devuelva datos de esa Url para utilizar fetch de manera eficiente antes de la function va async convinado con await-->
+<!--async: es un procedimiento o funcion asincrona que se ejecuta y no importa el tiempo que tarda en ejecutarse ya que se  ejecuta regresa al estado en el que se quedo y sigue funcionando.
+await:Espera a que se ejecute completamente para seguir con la siguiente funcion 
+Const: Es una constante-->

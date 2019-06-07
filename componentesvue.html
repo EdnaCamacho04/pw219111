@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="app">
-		<saludo></saludo>
+		<saludo></saludo>  
 		<contador></contador>
 		<contador></contador>
 		<contador></contador>
@@ -19,7 +19,6 @@
 	</div>
 
 	<script>
-		
 		const app = new Vue({
 			el: '#app'
 			
@@ -27,3 +26,20 @@
 	</script>
 </body>
 </html>
+
+
+<!-- un componente es un conjunto de elementos agregados en un segmento de codigo
+Para crear un componente utilizamos Vue.component ('Nombre del componente' (esto se realiza en componente.js),
+Se crea una etiqueta llamada saludo la cual es un componente de Vue y , recibe un objeto que lleva parametros y lleva atributos el primero y mas importante es 
+template: ya que tiene varias lineas de codigo y es una plantilla si tiene comillas simples o dobles solo aceptaria una linea de codigo si tiene el asento frances nos permite hacer interpolacion de variables para poner codigo dentro de strings, se pueden utilizar etiquetas html.
+para utilizar una plantilla se debe de tener div(elemento contenedor) si no no funcionaran los elementos html ya que tienen que ir encerradas en un div.
+return: retorna datos 
+data() cambia como si fuera una funcion cuando puso los parentesis
+La interpolacion de variables se hace con: {{}}
+las variables con const no pueden ser reasignadas
+)-->
+
+<!--Contador.js
+ se incrementara el numero por el numero ++
+-->
+

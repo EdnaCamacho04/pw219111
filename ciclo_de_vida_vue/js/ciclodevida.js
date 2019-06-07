@@ -16,7 +16,7 @@ const app = new Vue({
 		console.log('La página o el DOM ha sido cargado')
 	},
 	beforeUpdate(){
-		console.log('Antes de actualizar cualquier elemento dela página')
+		console.log('Antes de actualizar cualquier elemento de la página')
 	},
 	updated(){
 		console.log('La página ha sido actualizada')
@@ -33,3 +33,7 @@ const app = new Vue({
 		}
 	}
 })
+
+
+//Created, beforeMount, Mounted, Updated, etc son eventos 
+//Cuando tienen ())
